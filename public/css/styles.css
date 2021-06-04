@@ -1,0 +1,27 @@
+
+.container {
+    padding: 16px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+    border: 1px solid black;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-content {
+    margin-bottom: 2%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}

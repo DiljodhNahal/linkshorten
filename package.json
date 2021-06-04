@@ -1,0 +1,29 @@
+{
+  "name": "link-shortener",
+  "version": "1.0.0",
+  "description": "Link Shortener API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Diljodh Nahal",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.7",
+    "morgan": "^1.10.0",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.13.4"
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Main -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <title>Link Shortener</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <h1>Diljodh's Link Shortener</h1>
+                <h5>Hosted On Heroku, So The Domain Probably Makes It Longer, But You Get The Idea :)</h5>
+                <div id="endpoints">
+                    <h3>Endpoints</h3>
+                    <ul>
+                        <li>
+                            <strong>GET</strong> /:id - Access Existing Shortened Link.
+                            <ul>
+                                <li>Example: https://dil-linkshorten.herokuapp.com/V3BLJuTK</li>
+                                <li>Response: Redirect to "https://google.com"</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>POST</strong> /shorten/:url - Shorten A New Url.
+                            <ul>
+                                <li>Example: https://dil-linkshorten.herokuapp.com/shorten/htps://google.com</li>
+                                <li>Response: {original: "https://google.com", new: "https://dil-linkshorten.herokuapp.com/V3BLJuTK"}</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="demonstration">
+                    <h3>Demonstration</h3>
+                    <form id="demoForm">
+                        <input id="url" type="text" placeholder="https://example.ca" required >
+                        <input type="submit" value="Shorten" />
+                    </form>
+                    <div id="demoResponse"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jquery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
